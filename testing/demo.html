@@ -1,0 +1,23 @@
+<style>
+	#lol{
+		color: red;
+		font-size: 5vh;
+	}
+</style>
+<h3>Wait for <span id="lol"> 5 </span>&nbsp;sec to redirect to home page.</h3>
+
+<script>
+let h3 = document.getElementById('lol');
+
+let myinterval = setInterval(()=>{
+		
+		if(h3.innerText != 1)
+		{
+			h3.innerText =  h3.innerText - 1;
+		}
+		else{
+			window.location.href = "http://www.google.com/";
+		}
+},1000);
+
+</script>
